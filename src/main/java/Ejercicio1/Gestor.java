@@ -10,6 +10,16 @@ public class Gestor {
     }
 
 
+    public void agregarMesa(Mesa mesa) {
+        mesas.add(mesa);
+    }
+    public void mostrarMesasDisponibles() {
+        System.out.println("Estas son las mesas que ofrecemos para reservar:");
+        for (Mesa mesa : mesas) {
+            mesa.mostrarInformacion();
+        }
+    }
+
 
 }
 
