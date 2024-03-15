@@ -11,5 +11,6 @@ abstract class Mesa {
         this.numeroIntegrantes = numeroIntegrantes;
         this.ubicacion = ubicacion;
         this.ultimaReserva = ultimaReserva;
+
     }
 }
