@@ -13,4 +13,12 @@ abstract class Mesa {
         this.ultimaReserva = ultimaReserva;
 
     }
+    public abstract double calcularPrecioReserva();
+
+    // Método para mostrar la información de la mesa
+    public void mostrarInformacion() {
+        System.out.println("Mesa " + getClass().getSimpleName() + " nº" + numeroIntegrantes + " (" + ubicacion + ") " +
+                "última reserva: " + ultimaReserva.toString());
+    }
 }
+
