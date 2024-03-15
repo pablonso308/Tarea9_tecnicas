@@ -12,5 +12,14 @@ public class Main {
         mesaIndividual.mostrarInformacion();
         mesaDoble.mostrarInformacion();
         mesaGrupo.mostrarInformacion();
+
+Gestor gestor = new Gestor();
+        gestor.agregarMesa(mesaIndividual);
+        gestor.agregarMesa(mesaDoble);
+        gestor.agregarMesa(mesaGrupo);
+
+        gestor.pedirMesa();
+        gestor.mostrarMesasDisponibles();
+
     }
 }
