@@ -1,0 +1,36 @@
+@startuml
+
+abstract class Mesa {
+    -numeroIntegrantes: int
+    -ubicacion: String
+    -ultimaReserva: LocalDate
+    {abstract} +calcularPrecioReserva(): double
+    +mostrarInformacion(): void
+}
+
+class MesaIndividual {
+    -vista: String
+    +MesaIndividual(numeroIntegrantes: int, ubicacion: String, ultimaReserva: LocalDate, vista: String)
+    +calcularPrecioReserva(): double
+    +mostrarInformacion(): void
+}
+
+class MesaDoble {
+    -vista: String
+    +MesaDoble(numeroIntegrantes: int, ubicacion: String, ultimaReserva: LocalDate, vista: String)
+    +calcularPrecioReserva(): double
+    +mostrarInformacion(): void
+}
+
+class MesaGrupo {
+    -numeroEnchufes: int
+    +MesaGrupo(numeroIntegrantes: int, ubicacion: String, ultimaReserva: LocalDate, numeroEnchufes: int)
+    +calcularPrecioReserva(): double
+    +mostrarInformacion(): void
+}
+
+Mesa <|-- MesaIndividual
+Mesa <|-- MesaDoble
+Mesa <|-- MesaGrupo
+
+@enduml
