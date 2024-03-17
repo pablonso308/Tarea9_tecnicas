@@ -1,5 +1,5 @@
 README
-link a mi repositorio:
+link a mi repositorio: https://github.com/pablonso308/Tarea9_tecnicas.git
 
 ENUNCIADO 
 Ejercicio 1: Sistema de Reservas para una Cafetería
